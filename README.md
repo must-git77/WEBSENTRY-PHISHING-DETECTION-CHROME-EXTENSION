@@ -1,6 +1,32 @@
+# WebSentry – Phishing Detection Chrome Extension 
+
+WebSentry is a machine learning–based Chrome extension developed to detect phishing websites in real time. It analyzes URL-based features and uses supervised machine learning (SVM and XGBoost) through a Flask backend to classify websites as **Safe** or **Phishing/Suspicious**, helping users avoid online scams while browsing.
+
+---
+
+## 📌 Project Background (Why this project exists)
+Phishing is one of the most common cyber threats where attackers create fake websites that look real (e.g., banking, e-wallet, email login pages) to steal user credentials. Many users cannot easily recognize phishing websites because the design looks convincing. WebSentry aims to reduce this risk by providing **quick warnings inside the browser** before the user enters sensitive information.
+
+---
+
+## 🎯 Objectives
+- Detect phishing websites **in real time** during browsing
+- Provide a **browser-based** security solution that is easy to use
+- Compare **two supervised ML models** (SVM vs XGBoost) and select the better-performing model
+- Improve user awareness by showing a clear classification result in the extension UI
+
+---
+
+## ⭐ Key Features
+- **Manual scan:** User clicks “Scan Website” to evaluate the current tab.
+- **(Optional) Auto scan:** Automatically scans when the user opens a new website (if enabled in your implementation).
+- **Risk classification:** Displays output such as Safe / Phishing / Suspicious based on the model prediction.
+- **Real-time backend prediction:** Chrome extension sends the URL to Flask API and receives the result instantly.
+- **Lightweight approach:** Uses URL features (fast to compute) instead of heavy page content processing.
+
 ## 🚀 How to Run WebSentry (Step-by-Step)
 
-### ✅ Requirements
+# ✅ Requirements
 - Google Chrome (latest)
 - Python 3.9+ (recommended)
 - pip (Python package installer)
@@ -60,44 +86,41 @@ Click Scan Website
 
 You should see the result (Safe / Phishing / Suspicious)
 
+🔧 Common Fixes
+Backend not connecting?
+
+Make sure Flask is running first
+
+Confirm the extension is calling the correct backend URL (example):
+
+http://127.0.0.1:5000/predict
+
+CORS error (if it happens)
+
+Enable CORS in Flask (common solution):
+
+Install: pip install flask-cors
+
+Add in app.py:
+
+from flask_cors import CORS
+
+CORS(app)
+
+Model file not found?
+
+Make sure your .joblib model file is inside the backend folder (or the correct path is used in code)
+
+## ✅ Quick Run Summary
+
 Start backend: python app.py
 
 Load extension in chrome://extensions/
 
 Click WebSentry → Scan Website
 
+If you tell me your **exact folder names** (example: `backend/` and `extension/`) and what your **API endpoint name** is (example: `/predict`), I’ll edit this to match your project exactly.
 
-If you tell me your **exact folder names** (example: `backend/` and `extension/`) and what your **API endpoi
-
-
-
-# WebSentry – Phishing Detection Chrome Extension 
-
-WebSentry is a machine learning–based Chrome extension developed to detect phishing websites in real time. It analyzes URL-based features and uses supervised machine learning (SVM and XGBoost) through a Flask backend to classify websites as **Safe** or **Phishing/Suspicious**, helping users avoid online scams while browsing.
-
----
-
-## 📌 Project Background (Why this project exists)
-Phishing is one of the most common cyber threats where attackers create fake websites that look real (e.g., banking, e-wallet, email login pages) to steal user credentials. Many users cannot easily recognize phishing websites because the design looks convincing. WebSentry aims to reduce this risk by providing **quick warnings inside the browser** before the user enters sensitive information.
-
----
-
-## 🎯 Objectives
-- Detect phishing websites **in real time** during browsing
-- Provide a **browser-based** security solution that is easy to use
-- Compare **two supervised ML models** (SVM vs XGBoost) and select the better-performing model
-- Improve user awareness by showing a clear classification result in the extension UI
-
----
-
-## ⭐ Key Features
-- **Manual scan:** User clicks “Scan Website” to evaluate the current tab.
-- **(Optional) Auto scan:** Automatically scans when the user opens a new website (if enabled in your implementation).
-- **Risk classification:** Displays output such as Safe / Phishing / Suspicious based on the model prediction.
-- **Real-time backend prediction:** Chrome extension sends the URL to Flask API and receives the result instantly.
-- **Lightweight approach:** Uses URL features (fast to compute) instead of heavy page content processing.
-
----
 
 ## 🧠 How WebSentry Works (End-to-End Flow)
 1. **User opens a website** in Chrome.
