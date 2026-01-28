@@ -1,3 +1,76 @@
+## 🚀 How to Run WebSentry (Step-by-Step)
+
+### ✅ Requirements
+- Google Chrome (latest)
+- Python 3.9+ (recommended)
+- pip (Python package installer)
+
+---
+
+## 1) Run the Flask Backend (API)
+
+1. Open a terminal / CMD and go to your backend folder:
+   ```bash
+   cd backend
+(Optional but recommended) Create a virtual environment:
+
+python -m venv venv
+Activate the virtual environment:
+
+Windows (CMD):
+
+venv\Scripts\activate
+Windows (PowerShell):
+
+venv\Scripts\Activate.ps1
+Mac/Linux:
+
+source venv/bin/activate
+Install dependencies:
+
+pip install -r requirements.txt
+Run the backend:
+
+python app.py
+✅ Backend should run on something like:
+
+http://127.0.0.1:5000 or http://localhost:5000
+
+Keep this terminal running while using the extension.
+
+2) Load the Chrome Extension
+Open Chrome and go to:
+
+chrome://extensions/
+Enable Developer mode (top-right)
+
+Click Load unpacked
+
+Select your extension folder, for example:
+
+chrome-extension/
+✅ The WebSentry extension should appear in your extensions list.
+
+3) Test the Extension
+Open any website in Chrome
+
+Click the WebSentry icon
+
+Click Scan Website
+
+You should see the result (Safe / Phishing / Suspicious)
+
+Start backend: python app.py
+
+Load extension in chrome://extensions/
+
+Click WebSentry → Scan Website
+
+
+If you tell me your **exact folder names** (example: `backend/` and `extension/`) and what your **API endpoi
+
+
+
 # WebSentry – Phishing Detection Chrome Extension 
 
 WebSentry is a machine learning–based Chrome extension developed to detect phishing websites in real time. It analyzes URL-based features and uses supervised machine learning (SVM and XGBoost) through a Flask backend to classify websites as **Safe** or **Phishing/Suspicious**, helping users avoid online scams while browsing.
