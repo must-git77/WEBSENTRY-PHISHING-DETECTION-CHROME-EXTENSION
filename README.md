@@ -1,6 +1,6 @@
-# WebSentry – Phishing Detection Chrome Extension (FYP)
+# WebSentry – Phishing Detection Chrome Extension 
 
-WebSentry is a machine learning–based Chrome extension developed as a Final Year Project (FYP) to detect phishing websites in real time. It analyzes URL-based features and uses supervised machine learning (SVM and XGBoost) through a Flask backend to classify websites as **Safe** or **Phishing/Suspicious**, helping users avoid online scams while browsing.
+WebSentry is a machine learning–based Chrome extension developed to detect phishing websites in real time. It analyzes URL-based features and uses supervised machine learning (SVM and XGBoost) through a Flask backend to classify websites as **Safe** or **Phishing/Suspicious**, helping users avoid online scams while browsing.
 
 ---
 
@@ -207,13 +207,13 @@ Deploy Flask backend to cloud (so it works anywhere, not just local)
 
 Improve UI with risk score, explanation, and warning banner
 
-🎓 Academic Information
+## 👤 Project Information
 
-Project Type: Final Year Project (FYP)
-Institution: Universiti Kuala Lumpur
+**Project Title:** WebSentry – Phishing Detection Chrome Extension  
 
-Student: Musthaq Ahmad Bin Shaik Faizal Hassan
-Supervisor: Noor Hazlina Abdul Mutalib
+Author:: Musthaq Ahmad Bin Shaik Faizal Hassan  
+
+Supervisor: Noor Hazlina Abdul Mutalib  
 
 ✅ Submission Note (For portal: Sharing Repository Link)
 
