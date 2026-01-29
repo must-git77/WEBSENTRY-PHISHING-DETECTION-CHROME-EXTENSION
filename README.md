@@ -9,17 +9,9 @@ Phishing is one of the most common cyber threats where attackers create fake web
 
 ---
 
-## 🎯 Objectives
-- Detect phishing websites **in real time** during browsing
-- Provide a **browser-based** security solution that is easy to use
-- Compare **two supervised ML models** (SVM vs XGBoost) and select the better-performing model
-- Improve user awareness by showing a clear classification result in the extension UI
-
----
 
 ## ⭐ Key Features
 - **Manual scan:** User clicks “Scan Website” to evaluate the current tab.
-- **(Optional) Auto scan:** Automatically scans when the user opens a new website (if enabled in your implementation).
 - **Risk classification:** Displays output such as Safe / Phishing / Suspicious based on the model prediction.
 - **Real-time backend prediction:** Chrome extension sends the URL to Flask API and receives the result instantly.
 - **Lightweight approach:** Uses URL features (fast to compute) instead of heavy page content processing.
@@ -305,17 +297,15 @@ Improve UI with risk score, explanation, and warning banner
 
 ## 👤 Project Information
 
-**Project Title:** WebSentry – Phishing Detection Chrome Extension  
 
-Author:: Musthaq Ahmad Bin Shaik Faizal Hassan  
 
-Supervisor: Noor Hazlina Abdul Mutalib  
+✅ (For portal: Sharing Repository Link)
 
-✅ Submission Note (For portal: Sharing Repository Link)
+ for the repository link, share:
 
-If your lecturer asks for the repository link, share:
-https://github.com/<your-username>/WebSentry-Phishing-Detection-Chrome-Extension
+[https://github.com/<your-username>/WebSentry-Phishing-Detection-Chrome-Extension]
 
+https://drive.google.com/file/d/1B1rTgKojILRN7c20EQ3801LgXc34t3fS/view?usp=sharing
 
 ### What you should delete from your current README
 In your current file there are repeated lines like `"# WEBSENTRY-PHISHING-DETECTION-CHROME-EXTENSION"` at the bottom — remove those, and keep **only one clean README**. :contentReference[oaicite:1]{index=1}
