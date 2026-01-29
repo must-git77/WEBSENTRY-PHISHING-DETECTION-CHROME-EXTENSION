@@ -25,6 +25,13 @@ Phishing is one of the most common cyber threats where attackers create fake web
 
 ---
 
+## 💻 GitHub Source Code:
+ for the repository link, share: https://github.com/must-git77/WEBSENTRY-PHISHING-DETECTION-CHROME-EXTENSION
+
+ for the Google Drive link: https://drive.google.com/file/d/1B1rTgKojILRN7c20EQ3801LgXc34t3fS/view?usp=sharing
+
+---
+
 ## 1) Run the Flask Backend (API)
 
 1. Open a terminal / CMD and go to your backend folder:
@@ -294,18 +301,6 @@ Add whitelist/blacklist rules for faster blocking
 Deploy Flask backend to cloud (so it works anywhere, not just local)
 
 Improve UI with risk score, explanation, and warning banner
-
-## 👤 Project Information
-
-
-
-✅ (For portal: Sharing Repository Link)
-
- for the repository link, share:
-
-[https://github.com/<your-username>/WebSentry-Phishing-Detection-Chrome-Extension]
-
-https://drive.google.com/file/d/1B1rTgKojILRN7c20EQ3801LgXc34t3fS/view?usp=sharing
 
 ### What you should delete from your current README
 In your current file there are repeated lines like `"# WEBSENTRY-PHISHING-DETECTION-CHROME-EXTENSION"` at the bottom — remove those, and keep **only one clean README**. :contentReference[oaicite:1]{index=1}
