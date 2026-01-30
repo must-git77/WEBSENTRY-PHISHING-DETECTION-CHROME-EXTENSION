@@ -304,9 +304,4 @@ Deploy Flask backend to cloud (so it works anywhere, not just local)
 
 Improve UI with risk score, explanation, and warning banner
 
-### What you should delete from your current README
-In your current file there are repeated lines like `"# WEBSENTRY-PHISHING-DETECTION-CHROME-EXTENSION"` at the bottom — remove those, and keep **only one clean README**. :contentReference[oaicite:1]{index=1}
-
-If you paste this updated README and tell me your **actual folder names** (backend folder name + extension folder name), I can quickly adjust the structure section so it matches your repo exactly.
-
 
